@@ -12,3 +12,4 @@ Für Dieses Projekt habe ich Zwei felder erstellt eines um die werte zu speicher
                 {' ',' ',' ',' ',' ',' ',' ',' '}
     };
 ```
+Darauf folgend habe ich das "Backend feld" an Zufäligen  
