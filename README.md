@@ -20,3 +20,5 @@ Darauf folgend habe ich das "Backend feld" an Zufäligen stellen mit der Math.ra
         feld[ran1][ran2] = 'S';
     }
 ```
+Nach einer eingabe mit dem JoptionPane werden die koridinaten abgefragt und Die felder dieser werden "angeschossen".
+Falls diese Positionen mit einem S markiert werden war die nutzer eingabe richtig.
