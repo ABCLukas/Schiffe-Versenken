@@ -1,7 +1,7 @@
 # Schiffe-Versenken
 Für Dieses Projekt habe ich Zwei felder erstellt eines um die werte zu speichern und eines um Den spieler Seine getroffenen felder zu zeigen.
 ```C
-    int fillArray(int f[8][8]){
+int fillArray(int f[8][8]){
     for (int i = 0; i < 8; i++){
         for (int j = 0; j < 8; j++){
             f[i][j] = 0;
@@ -12,7 +12,7 @@ Für Dieses Projekt habe ich Zwei felder erstellt eines um die werte zu speicher
 ```
 Darauf folgend habe ich das "Backend feld" an Zufäligen stellen mit der Math.random funktion
 ```C
-    int addBattleships(int f[8][8], int shipAmount){
+int addBattleships(int f[8][8], int shipAmount){
     srand(time(NULL));
 
     for (int i = 0; i < shipAmount; i++){
