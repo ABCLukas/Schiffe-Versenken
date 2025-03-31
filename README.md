@@ -1,5 +1,5 @@
-# Schiffe-Versenken
-Für Dieses Projekt habe ich Zwei felder erstellt eines um die werte zu speichern und eines um Den spieler Seine getroffenen felder zu zeigen.
+# Battleships
+The main contains two 2-dimensional arrays. One is for the backend of the game, and the other one is for the visual presentation for the player
 ```C
 int fillArray(int f[8][8]){
     for (int i = 0; i < 8; i++){
@@ -10,7 +10,7 @@ int fillArray(int f[8][8]){
     return 0;
 }
 ```
-Darauf folgend habe ich das "Backend feld" an Zufäligen stellen mit der Math.random funktion
+The Positions of the Battleships is Random and Gets declared with a 1 on The Chosen Position
 ```C
 int addBattleships(int f[8][8], int shipAmount){
     srand(time(NULL));
@@ -23,5 +23,3 @@ int addBattleships(int f[8][8], int shipAmount){
     return 0;
 }
 ```
-Nach einer eingabe mit dem JoptionPane werden die koridinaten abgefragt und Die felder dieser werden "angeschossen".
-Falls diese Positionen mit einem S markiert werden war die nutzer eingabe richtig.
