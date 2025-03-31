@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int fillArray(int f[8][8], int shipAmount)
+int fillArray(int f[8][8])
 {
     for (int i = 0; i < 8; i++)
     {
@@ -11,7 +11,11 @@ int fillArray(int f[8][8], int shipAmount)
             f[i][j] = 0;
         }
     }
+    return 0;
+}
 
+int addBattleships(int f[8][8], int shipAmount)
+{
     srand(time(NULL));
 
     for (int i = 0; i < shipAmount; i++)
@@ -38,11 +42,16 @@ int printArray(int f[8][8])
 
 int main(void)
 {
-    int field[8][8];
+    int backendField[8][8];
+    int frontendField[8][8];
 
-    fillArray(field, 4);
+    fillArray(backendField);
+    addBattleships(backendField,4);
+    printArray(backendField);
 
-    printArray(field);
+    fillArray(frontendField);
+    printf("\n");
+    printArray(frontendField);
 
     return 0;
 }
